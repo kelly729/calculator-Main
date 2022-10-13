@@ -1,0 +1,60 @@
+.App{
+  text-align: center;
+}
+body{
+  background: linear-gradient(to right,#01052a,#014d90);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Calculator{
+  width: 350px;
+  box-shadow: 8px 25px 15px -3px rgba(0,0,0,0.1);
+  background: white;
+  margin-top: 3rem;
+  border-radius: 10px;
+}
+.Screen{
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  align-items: flex-end;
+  margin: 2rem 2rem;
+  /* border: 2px solid green; */
+ 
+}
+
+.result{
+  margin-top: 3rem;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #01052a;
+}
+.button-container{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(6,1fr);
+  gap:10px;
+  margin: 3rem 1rem;
+}
+.button-container button{
+  color: #01052a;
+  padding: 10px 0;
+  height: 3rem;
+  /* box-shadow: 5px 18px 15px -3px rgba(0,0,0,0.1); */
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+  width: 4rem;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  /* font-weight: bold; */
+  font-size: 20px;
+}
+#equal-btn{
+  grid-column:span 2;
+padding: 0;
+  background:#01052a;
+  color: white;
+  width: 9rem;
+}
